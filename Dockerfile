@@ -8,12 +8,16 @@ LABEL maintainer="thelamer"
 
 RUN \
   echo "**** install packages ****" && \
-  pacman -Sy --noconfirm --needed \
+  pacman -Syyu --noconfirm --needed \
     chromium \
+    tailscale \
+    iputils \
+    pacman-contrib \
     dolphin \
     kate \
     konsole \
     plasma-desktop && \
+    paccache -rk0 && \
   echo "**** application tweaks ****" && \
   sed -i \
     's#^Exec=.*#Exec=/usr/local/bin/wrapped-chromium#g' \
