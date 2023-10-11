@@ -16,6 +16,7 @@ RUN \
     dolphin \
     kate \
     konsole \
+    vim \
     plasma-desktop && \
     paccache -rk0 && \
   echo "**** application tweaks ****" && \
