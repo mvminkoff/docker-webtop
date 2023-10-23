@@ -17,6 +17,7 @@ RUN \
     kate \
     konsole \
     vim \
+    git \
     plasma-desktop && \
     paccache -rk0 && \
   echo "**** application tweaks ****" && \
