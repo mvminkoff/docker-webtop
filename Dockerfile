@@ -18,6 +18,7 @@ RUN \
     konsole \
     vim \
     git \
+    man \
     plasma-desktop && \
     paccache -rk0 && \
   echo "**** application tweaks ****" && \
