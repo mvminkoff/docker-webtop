@@ -9,7 +9,7 @@ LABEL maintainer="thelamer"
 RUN \
   echo "**** install packages ****" && \
   pacman -Syyu --noconfirm --needed \
-    chromium \
+    firefox \
     tailscale \
     iputils \
     pacman-contrib \
